@@ -41,7 +41,7 @@ export default function AboutPage() {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="w-full sm:w-auto">
-                    <a href="/path-to-resume.pdf" download>
+                    <a href="/Amey_Dabhade_Resume.pdf" download>
                       <Download className="mr-2 h-4 w-4" /> Download Resume
                     </a>
                   </Button>

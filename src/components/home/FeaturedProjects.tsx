@@ -1,0 +1,114 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowRight, Github, ExternalLink } from "lucide-react";
+import { Button } from "../ui/button";
+import { Card, CardContent } from "../ui/card";
+import { projects } from "@/lib/data";
+
+export function FeaturedProjects() {
+  // Get the first 3 projects for the featured section
+  const featuredProjects = projects.slice(0, 3);
+
+  return (
+    <section className="py-20 bg-muted/30">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-3xl font-bold mb-4"
+          >
+            Featured Projects
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-muted-foreground max-w-2xl mx-auto"
+          >
+            A showcase of my recent work, demonstrating my skills in web
+            development, design, and problem solving.
+          </motion.p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {featuredProjects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <Card className="h-full overflow-hidden">
+                <div className="relative aspect-[16/9] overflow-hidden bg-muted">
+                  <div className="absolute inset-0 flex items-center justify-center bg-muted text-muted-foreground">
+                    Project Image Placeholder
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.slice(0, 3).map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                    {project.technologies.length > 3 && (
+                      <span className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded-full">
+                        +{project.technologies.length - 3} more
+                      </span>
+                    )}
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                  <p className="text-muted-foreground mb-4">
+                    {project.description.length > 120
+                      ? `${project.description.substring(0, 120)}...`
+                      : project.description}
+                  </p>
+                  <div className="flex items-center space-x-3">
+                    <Button variant="ghost" size="sm" asChild>
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </a>
+                    </Button>
+                    <Button variant="ghost" size="sm" asChild>
+                      <a
+                        href={project.demoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Demo
+                      </a>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Button asChild variant="outline" size="lg">
+            <Link href="/portfolio">
+              View All Projects <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+} 

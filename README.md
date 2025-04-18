@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Amey Dabhade - Web Developer Portfolio
+
+A modern, responsive web developer portfolio website built with Next.js and Shadcn UI.
+
+## Features
+
+- **Modern Design**: Clean, professional design with attention to detail
+- **Responsive Layout**: Mobile-first approach ensures great experience on all devices
+- **Dark/Light Mode**: Toggle between dark and light themes
+- **Interactive Elements**: Smooth animations and transitions using Framer Motion
+- **Portfolio Showcase**: Filterable portfolio section to highlight projects
+- **Services Section**: Highlight your professional services
+- **Testimonials**: Showcase client feedback with a carousel
+- **Blog Section**: Share your thoughts and expertise
+- **Contact Form**: Easy-to-use contact form with validation
+
+## Tech Stack
+
+- **Next.js 14+**: React framework for production
+- **TypeScript**: Type-safe code
+- **Tailwind CSS**: Utility-first CSS framework
+- **Shadcn UI**: High-quality UI components
+- **Framer Motion**: Animation library
+- **React Hook Form**: Form handling with validation
+- **Zod**: Schema validation
+- **Lucide Icons**: Beautiful, consistent icons
 
 ## Getting Started
 
-First, run the development server:
+1. Clone this repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `src/app`: App router pages
+- `src/components`: Reusable UI components
+- `src/lib`: Utility functions and data
+- `public`: Static assets
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Replace placeholder content in `src/lib/data.ts` with your own information
+2. Add your own images to the `public/images` directory
+3. Customize colors in `src/app/globals.css` and `components.json`
+4. Modify components as needed
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
+# portfolio

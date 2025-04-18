@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { ArrowRight, Rocket, Code } from "lucide-react";
+import { Rocket, Code } from "lucide-react";
 import { useTheme } from "next-themes";
 
 export function HeroSection() {

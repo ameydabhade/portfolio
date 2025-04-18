@@ -162,7 +162,7 @@ export const services: Service[] = [
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Sarah Johnson",
+    name: "Prakash",
     position: "CEO",
     company: "Vigomerge",
     testimonial: "Working with Amey was an absolute pleasure. He delivered our CRM system on time and exceeded our expectations in terms of quality and attention to detail.",
@@ -178,7 +178,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "3",
-    name: "Emily Rodriguez",
+    name: "Sarika Narawade",
     position: "Marketing Director",
     company: "Vigomerge",
     testimonial: "Our website redesign project was handled with professionalism and creativity. Amey's ability to translate our brand vision into a functional website with SEO optimization was impressive.",
@@ -186,7 +186,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "4",
-    name: "David Park",
+    name: "Rajesh",
     position: "Dean",
     company: "Maharashtra State Skills University",
     testimonial: "Amey has been an outstanding Technical Club Head, demonstrating leadership and technical expertise. His mentoring of students in Data Structures and Algorithms has significantly improved our program.",

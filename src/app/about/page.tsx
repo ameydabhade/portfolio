@@ -41,7 +41,7 @@ export default function AboutPage() {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="w-full sm:w-auto">
-                    <a href="/Amey_Dabhade_Resume.pdf" download>
+                    <a href="/path-to-resume.pdf" download>
                       <Download className="mr-2 h-4 w-4" /> Download Resume
                     </a>
                   </Button>
@@ -144,9 +144,9 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 max-w-3xl mx-auto">
                 <div className="border-l-2 border-primary/50 pl-8 pb-12 relative">
                   <div className="absolute w-5 h-5 bg-primary rounded-full -left-[10px] top-0 ring-4 ring-background"></div>
-                  <h3 className="font-bold text-xl">Senior Web Developer</h3>
-                  <p className="text-primary font-medium">Tech Solutions Inc.</p>
-                  <p className="text-sm text-muted-foreground mb-4">2021 - Present</p>
+                  <h3 className="font-bold text-xl">Full Stack Developer</h3>
+                  <p className="text-primary font-medium">Vigomerge Technologies</p>
+                  <p className="text-sm text-muted-foreground mb-4">2024 - Present</p>
                   <p className="text-muted-foreground">
                     Lead development of web applications for clients across
                     various industries. Managed a team of junior developers and
@@ -157,8 +157,8 @@ export default function AboutPage() {
                 <div className="border-l-2 border-primary/50 pl-8 pb-12 relative">
                   <div className="absolute w-5 h-5 bg-primary rounded-full -left-[10px] top-0 ring-4 ring-background"></div>
                   <h3 className="font-bold text-xl">Web Developer</h3>
-                  <p className="text-primary font-medium">Digital Agency XYZ</p>
-                  <p className="text-sm text-muted-foreground mb-4">2018 - 2021</p>
+                  <p className="text-primary font-medium">Freelancer</p>
+                  <p className="text-sm text-muted-foreground mb-4">2024 - Current</p>
                   <p className="text-muted-foreground">
                     Developed responsive websites and e-commerce platforms for
                     clients. Collaborated with designers and project managers to
@@ -168,9 +168,9 @@ export default function AboutPage() {
 
                 <div className="border-l-2 border-primary/50 pl-8 relative">
                   <div className="absolute w-5 h-5 bg-primary rounded-full -left-[10px] top-0 ring-4 ring-background"></div>
-                  <h3 className="font-bold text-xl">Junior Developer</h3>
-                  <p className="text-primary font-medium">StartUp Co.</p>
-                  <p className="text-sm text-muted-foreground mb-4">2016 - 2018</p>
+                  <h3 className="font-bold text-xl">Full Stack Developer</h3>
+                  <p className="text-primary font-medium">Starbox Ad Media</p>
+                  <p className="text-sm text-muted-foreground mb-4">2023 - 2024</p>
                   <p className="text-muted-foreground">
                     Assisted in the development of web applications and websites.
                     Gained experience in front-end technologies and responsive

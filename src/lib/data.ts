@@ -206,6 +206,6 @@ export const navLinks = [
 export const socialLinks = [
   { name: "GitHub", url: "https://github.com/ameydabhade", icon: "github" },
   { name: "LinkedIn", url: "https://linkedin.com/in/ameydabhade", icon: "linkedin" },
-  { name: "Twitter", url: "https://twitter.com/ameydabhade", icon: "twitter" },
-  { name: "Instagram", url: "https://instagram.com/ameydabhade", icon: "instagram" },
+  { name: "Twitter", url: "https://x.com/ASantoshdabhade", icon: "twitter" },
+  { name: "Instagram", url: "https://instagram.com/", icon: "instagram" },
 ]; 

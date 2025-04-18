@@ -28,10 +28,10 @@ export default function ServicesPage() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">My Services</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Services I Offer</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              I offer a range of services to help businesses and individuals create
-              impactful digital experiences.
+              Specialized web development services to help businesses establish a strong online 
+              presence and achieve their digital goals.
             </p>
           </motion.div>
 
@@ -46,7 +46,7 @@ export default function ServicesPage() {
                 <Card className="h-full">
                   <CardHeader>
                     <div className="mb-4 text-primary">
-                      {iconMap[service.icon as keyof typeof iconMap]}
+                      {iconMap[service.icon] || <Code className="h-12 w-12" />}
                     </div>
                     <CardTitle className="text-xl">{service.title}</CardTitle>
                   </CardHeader>
@@ -57,6 +57,159 @@ export default function ServicesPage() {
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="mt-20 mb-20"
+          >
+            <h2 className="text-3xl font-bold mb-6 text-center">Pricing</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-center mb-12">
+              Transparent pricing options to fit various project needs and budgets.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Basic Package */}
+              <Card className="relative overflow-hidden border-2 border-muted">
+                <div className="absolute inset-x-0 top-0 h-2 bg-muted"></div>
+                <CardHeader className="pt-8">
+                  <CardTitle className="text-xl text-center">Basic Website</CardTitle>
+                  <div className="text-center mt-4">
+                    <span className="text-3xl font-bold">$599</span>
+                    <span className="text-muted-foreground"> starting</span>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Responsive design</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Up to 5 pages</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Basic SEO setup</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Contact form</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>2 weeks delivery</span>
+                    </li>
+                  </ul>
+                  <Button asChild className="w-full">
+                    <Link href="/contact">Get Started</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+              
+              {/* Standard Package */}
+              <Card className="relative overflow-hidden border-2 border-primary">
+                <div className="absolute inset-x-0 top-0 h-2 bg-primary"></div>
+                <CardHeader className="pt-8">
+                  <div className="absolute top-4 right-4 bg-primary/10 px-3 py-1 rounded-full text-xs font-medium text-primary">
+                    Popular
+                  </div>
+                  <CardTitle className="text-xl text-center">Business Website</CardTitle>
+                  <div className="text-center mt-4">
+                    <span className="text-3xl font-bold">$1,299</span>
+                    <span className="text-muted-foreground"> starting</span>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Responsive design</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Up to 10 pages</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Advanced SEO optimization</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Blog/News section</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Custom contact forms</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>3-4 weeks delivery</span>
+                    </li>
+                  </ul>
+                  <Button asChild className="w-full">
+                    <Link href="/contact">Get Started</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+              
+              {/* Premium Package */}
+              <Card className="relative overflow-hidden border-2 border-muted">
+                <div className="absolute inset-x-0 top-0 h-2 bg-muted"></div>
+                <CardHeader className="pt-8">
+                  <CardTitle className="text-xl text-center">E-commerce / Web App</CardTitle>
+                  <div className="text-center mt-4">
+                    <span className="text-3xl font-bold">$2,999</span>
+                    <span className="text-muted-foreground"> starting</span>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Custom web application</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>E-commerce functionality</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>User authentication</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Payment integration</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Admin dashboard</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>6-8 weeks delivery</span>
+                    </li>
+                  </ul>
+                  <Button asChild className="w-full">
+                    <Link href="/contact">Get Started</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="text-center mt-10">
+              <p className="text-muted-foreground mb-4">
+                Need a custom solution? Contact me for a personalized quote.
+              </p>
+              <Button asChild variant="outline" size="lg" className="rounded-full">
+                <Link href="/contact">
+                  Get a Free Quote <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+          </motion.div>
 
           <div className="mt-16 lg:mt-24">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

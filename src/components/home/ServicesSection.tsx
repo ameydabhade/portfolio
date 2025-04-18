@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { services } from "@/lib/data";
 
-const iconMap: Record<string, React.ReactNode> = {
+const iconMap = {
   code: <Code className="h-8 w-8" />,
   layout: <Layout className="h-8 w-8" />,
   server: <Server className="h-8 w-8" />,
@@ -28,7 +28,7 @@ export function ServicesSection() {
             transition={{ duration: 0.5 }}
             className="text-3xl font-bold mb-4"
           >
-            My Services
+            Services I Offer
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -37,8 +37,8 @@ export function ServicesSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-muted-foreground max-w-2xl mx-auto"
           >
-            I offer a range of services to help businesses and individuals create
-            impactful digital experiences.
+            Specialized web development services to help businesses grow their online presence
+            and achieve their digital goals.
           </motion.p>
         </div>
 
@@ -53,11 +53,11 @@ export function ServicesSection() {
             >
               <Card className="h-full border-none shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-6">
-                  <div className="mb-4 text-primary">
-                    {iconMap[service.icon]}
+                  <div className="mb-6 p-4 bg-primary/10 inline-block rounded-lg text-primary">
+                    {iconMap[service.icon] || <Code className="h-8 w-8" />}
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                  <p className="text-muted-foreground">
                     {service.description}
                   </p>
                 </CardContent>
@@ -67,9 +67,9 @@ export function ServicesSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button asChild variant="outline" size="lg">
+          <Button asChild size="lg" className="rounded-full">
             <Link href="/services">
-              Learn More About My Services <ArrowRight className="ml-2 h-4 w-4" />
+              Get a Free Quote <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>

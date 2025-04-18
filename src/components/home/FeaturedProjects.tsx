@@ -45,10 +45,12 @@ export function FeaturedProjects() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full overflow-hidden">
-                <div className="relative aspect-[16/9] overflow-hidden bg-muted">
-                  <div className="absolute inset-0 flex items-center justify-center bg-muted text-muted-foreground">
-                    Project Image Placeholder
+              <Card className="h-full overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div className="relative aspect-[16/9] overflow-hidden bg-gradient-to-br from-primary/5 to-muted">
+                  <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
+                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                      <ExternalLink className="h-6 w-6 text-primary/70" />
+                    </div>
                   </div>
                 </div>
                 <CardContent className="p-6">
@@ -68,12 +70,22 @@ export function FeaturedProjects() {
                     )}
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-muted-foreground mb-6">
                     {project.description.length > 120
                       ? `${project.description.substring(0, 120)}...`
                       : project.description}
                   </p>
-                  <div className="flex items-center space-x-3">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <Button variant="default" size="sm" asChild className="w-full sm:w-auto">
+                      <a
+                        href={project.demoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        View Project
+                      </a>
+                    </Button>
                     <Button variant="ghost" size="sm" asChild>
                       <a
                         href={project.githubLink}
@@ -84,16 +96,6 @@ export function FeaturedProjects() {
                         Code
                       </a>
                     </Button>
-                    <Button variant="ghost" size="sm" asChild>
-                      <a
-                        href={project.demoLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        Demo
-                      </a>
-                    </Button>
                   </div>
                 </CardContent>
               </Card>
@@ -102,9 +104,9 @@ export function FeaturedProjects() {
         </div>
 
         <div className="text-center mt-12">
-          <Button asChild variant="outline" size="lg">
+          <Button asChild size="lg" className="rounded-full">
             <Link href="/portfolio">
-              View All Projects <ArrowRight className="ml-2 h-4 w-4" />
+              See More Projects <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>

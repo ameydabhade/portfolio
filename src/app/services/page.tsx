@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowRight, Code, Layout, Server, Layers, Palette, Zap } from "lucide-react";
+import { ArrowRight, Code, Layout, Server, Layers, Palette, Zap, Shield } from "lucide-react";
 import { services } from "@/lib/data";
 
 const iconMap = {
@@ -15,6 +15,7 @@ const iconMap = {
   layers: <Layers className="h-12 w-12" />,
   palette: <Palette className="h-12 w-12" />,
   zap: <Zap className="h-12 w-12" />,
+  shield: <Shield className="h-12 w-12" />,
 };
 
 export default function ServicesPage() {
@@ -46,6 +47,7 @@ export default function ServicesPage() {
                 <Card className="h-full">
                   <CardHeader>
                     <div className="mb-4 text-primary">
+                      {/* @ts-ignore */}
                       {iconMap[service.icon] || <Code className="h-12 w-12" />}
                     </div>
                     <CardTitle className="text-xl">{service.title}</CardTitle>

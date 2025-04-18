@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Code, Layout, Server, Layers, Palette, Zap } from "lucide-react";
+import { ArrowRight, Code, Layout, Server, Layers, Palette, Zap, Shield } from "lucide-react";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { services } from "@/lib/data";
@@ -14,6 +14,7 @@ const iconMap = {
   layers: <Layers className="h-8 w-8" />,
   palette: <Palette className="h-8 w-8" />,
   zap: <Zap className="h-8 w-8" />,
+  shield: <Shield className="h-8 w-8" />,
 };
 
 export function ServicesSection() {

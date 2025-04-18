@@ -32,7 +32,7 @@ export function HeroSection() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
             >
             
-              I Build Modern, Fast & Beautiful Websites
+              <span className="text-orange-500">I Build</span>  Modern, Fast & Beautiful Websites
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}

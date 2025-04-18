@@ -35,7 +35,7 @@ export default function AboutPage() {
               >
                 <div className="aspect-square bg-muted rounded-lg overflow-hidden mb-6 shadow-md">
                   <div className="w-full h-full flex items-center justify-center bg-muted text-muted-foreground">
-                    Profile Image Placeholder
+                    <img src="/Amey.jpeg" alt="Profile" />
                   </div>
                 </div>
 
@@ -63,7 +63,7 @@ export default function AboutPage() {
                   <h2 className="text-2xl font-bold mb-4">My Story</h2>
                   <div className="space-y-4 text-muted-foreground">
                     <p>
-                      I'm a web developer with over 5 years of experience
+                      I'm a web developer with over 2 years of experience
                       specializing in creating modern websites and applications
                       that help businesses achieve their goals online.
                     </p>

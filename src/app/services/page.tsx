@@ -76,21 +76,27 @@ export default function ServicesPage() {
               <Card className="relative overflow-hidden border-2 border-muted">
                 <div className="absolute inset-x-0 top-0 h-2 bg-muted"></div>
                 <CardHeader className="pt-8">
-                  <CardTitle className="text-xl text-center">Basic Website</CardTitle>
+                  <CardTitle className="text-xl text-center">ESSENTIAL PROFESSIONAL PRESENCE</CardTitle>
                   <div className="text-center mt-4">
-                    <span className="text-3xl font-bold">$599</span>
-                    <span className="text-muted-foreground"> starting</span>
+                    <span className="text-3xl font-bold">$799</span>
                   </div>
+                  <p className="text-sm text-center text-muted-foreground italic mt-2">
+                    A professional online presence for individuals or small businesses
+                  </p>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>Responsive design</span>
+                      <span>Custom-coded responsive website</span>
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>Up to 5 pages</span>
+                      <span>3-5 pages (Home, About, Services, etc.)</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Mobile-optimized design</span>
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
@@ -98,11 +104,19 @@ export default function ServicesPage() {
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>Contact form</span>
+                      <span>GDPR-compliant contact form</span>
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>2 weeks delivery</span>
+                      <span>SSL security certificate</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Social media integration</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>2-3 weeks delivery</span>
                     </li>
                   </ul>
                   <Button asChild className="w-full">
@@ -118,33 +132,43 @@ export default function ServicesPage() {
                   <div className="absolute top-4 right-4 bg-primary/10 px-3 py-1 rounded-full text-xs font-medium text-primary">
                     Popular
                   </div>
-                  <CardTitle className="text-xl text-center">Business Website</CardTitle>
+                  <CardTitle className="text-xl text-center">ENHANCED PROFESSIONAL SOLUTION</CardTitle>
                   <div className="text-center mt-4">
-                    <span className="text-3xl font-bold">$1,299</span>
-                    <span className="text-muted-foreground"> starting</span>
+                    <span className="text-3xl font-bold">$1,199</span>
                   </div>
+                  <p className="text-sm text-center text-muted-foreground italic mt-2">
+                    A more comprehensive website for established businesses
+                  </p>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>Responsive design</span>
+                      <span>All ESSENTIAL features</span>
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>Up to 10 pages</span>
+                      <span>Up to 8 pages of content</span>
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>Advanced SEO optimization</span>
+                      <span>Team/staff profiles</span>
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>Blog/News section</span>
+                      <span>Client testimonials section</span>
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>Custom contact forms</span>
+                      <span>Blog/news capability</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Google Maps integration</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Enhanced SEO features</span>
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
@@ -161,37 +185,47 @@ export default function ServicesPage() {
               <Card className="relative overflow-hidden border-2 border-muted">
                 <div className="absolute inset-x-0 top-0 h-2 bg-muted"></div>
                 <CardHeader className="pt-8">
-                  <CardTitle className="text-xl text-center">E-commerce / Web App</CardTitle>
+                  <CardTitle className="text-xl text-center">COMPLETE BUSINESS PLATFORM</CardTitle>
                   <div className="text-center mt-4">
-                    <span className="text-3xl font-bold">$2,999</span>
-                    <span className="text-muted-foreground"> starting</span>
+                    <span className="text-3xl font-bold">$1,999</span>
                   </div>
+                  <p className="text-sm text-center text-muted-foreground italic mt-2">
+                    A fully-featured website with additional functionality
+                  </p>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>Custom web application</span>
+                      <span>All ENHANCED features</span>
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>E-commerce functionality</span>
+                      <span>Custom design elements</span>
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>User authentication</span>
+                      <span>Basic enquiry/booking system</span>
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>Payment integration</span>
+                      <span>Document download area</span>
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>Admin dashboard</span>
+                      <span>FAQ section</span>
                     </li>
                     <li className="flex items-center">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary" />
-                      <span>6-8 weeks delivery</span>
+                      <span>Image gallery</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>Advanced contact forms</span>
+                    </li>
+                    <li className="flex items-center">
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                      <span>4-5 weeks delivery</span>
                     </li>
                   </ul>
                   <Button asChild className="w-full">
@@ -201,13 +235,241 @@ export default function ServicesPage() {
               </Card>
             </div>
             
-            <div className="text-center mt-10">
+            {/* Maintenance Services */}
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold mb-6 text-center">Maintenance Services</h3>
+              <div className="max-w-2xl mx-auto">
+                <Card className="border-2 border-muted">
+                  <CardHeader>
+                    <CardTitle className="text-xl text-center">TECHNICAL MAINTENANCE PACKAGE</CardTitle>
+                    <div className="text-center mt-2">
+                      <span className="text-2xl font-bold">$149</span>
+                      <span className="text-muted-foreground">/month</span>
+                    </div>
+                    <p className="text-sm text-center text-muted-foreground italic mt-2">
+                      Available only for websites with backend functionality
+                    </p>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <ul className="space-y-2">
+                        <li className="flex items-center">
+                          <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                          <span>Regular code updates</span>
+                        </li>
+                        <li className="flex items-center">
+                          <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                          <span>Security monitoring</span>
+                        </li>
+                        <li className="flex items-center">
+                          <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                          <span>Database management</span>
+                        </li>
+                        <li className="flex items-center">
+                          <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                          <span>Booking system maintenance</span>
+                        </li>
+                      </ul>
+                      <ul className="space-y-2">
+                        <li className="flex items-center">
+                          <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                          <span>Form processing support</span>
+                        </li>
+                        <li className="flex items-center">
+                          <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                          <span>Technical troubleshooting</span>
+                        </li>
+                        <li className="flex items-center">
+                          <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                          <span>Monthly performance report</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="mt-6">
+                      <Button asChild className="w-full md:w-auto">
+                        <Link href="/contact">Inquire Now</Link>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+            
+            {/* Add-on Options */}
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold mb-6 text-center">Add-on Options</h3>
+              <div className="max-w-md mx-auto">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-center">Enhance your package</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <table className="w-full">
+                      <thead>
+                        <tr className="border-b">
+                          <th className="text-left pb-2">Service</th>
+                          <th className="text-right pb-2">Price</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b">
+                          <td className="py-3">Additional pages</td>
+                          <td className="py-3 text-right">$69 per page</td>
+                        </tr>
+                        <tr>
+                          <td className="py-3">Basic booking system</td>
+                          <td className="py-3 text-right">$249</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+            
+            {/* Our Approach */}
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold mb-6 text-center">What Sets Our Websites Apart</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card>
+                  <CardContent className="pt-6">
+                    <h4 className="font-semibold text-lg mb-2">Custom Development</h4>
+                    <p className="text-muted-foreground">Hand-coded websites for better performance and security</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="pt-6">
+                    <h4 className="font-semibold text-lg mb-2">Accessibility Compliance</h4>
+                    <p className="text-muted-foreground">All sites meet WCAG standards for accessibility</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="pt-6">
+                    <h4 className="font-semibold text-lg mb-2">GDPR Built-in</h4>
+                    <p className="text-muted-foreground">Data protection compliance included from the ground up</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="pt-6">
+                    <h4 className="font-semibold text-lg mb-2">Mobile-optimized</h4>
+                    <p className="text-muted-foreground">Perfect functionality across all devices</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="pt-6">
+                    <h4 className="font-semibold text-lg mb-2">Secure by Design</h4>
+                    <p className="text-muted-foreground">Enhanced security features for your information</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+            
+            {/* Payment Terms */}
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold mb-6 text-center">Payment Terms</h3>
+              <div className="max-w-lg mx-auto">
+                <Card>
+                  <CardContent className="pt-6">
+                    <ul className="space-y-3">
+                      <li className="flex items-center">
+                        <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                        <span>50% deposit to commence work</span>
+                      </li>
+                      <li className="flex items-center">
+                        <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                        <span>50% upon completion before site launch</span>
+                      </li>
+                      <li className="flex items-center">
+                        <ArrowRight className="h-4 w-4 mr-2 text-primary" />
+                        <span>Maintenance packages billed monthly or quarterly</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+            
+            {/* Next Steps */}
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold mb-6 text-center">Next Steps</h3>
+              <div className="max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                  <Card>
+                    <CardContent className="pt-6">
+                      <div className="bg-primary/10 text-primary rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl mb-4">
+                        1
+                      </div>
+                      <h4 className="font-semibold mb-2">Select your package</h4>
+                      <p className="text-sm text-muted-foreground">Choose the option that best fits your needs</p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="pt-6">
+                      <div className="bg-primary/10 text-primary rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl mb-4">
+                        2
+                      </div>
+                      <h4 className="font-semibold mb-2">Schedule consultation</h4>
+                      <p className="text-sm text-muted-foreground">Discuss your specific requirements</p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="pt-6">
+                      <div className="bg-primary/10 text-primary rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl mb-4">
+                        3
+                      </div>
+                      <h4 className="font-semibold mb-2">Receive proposal</h4>
+                      <p className="text-sm text-muted-foreground">Get a tailored proposal with timeline</p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="pt-6">
+                      <div className="bg-primary/10 text-primary rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl mb-4">
+                        4
+                      </div>
+                      <h4 className="font-semibold mb-2">Begin development</h4>
+                      <p className="text-sm text-muted-foreground">Start the process of creating your website</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+            
+            {/* Terms and Conditions */}
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold mb-6 text-center">Terms & Conditions</h3>
+              <div className="max-w-2xl mx-auto">
+                <Card>
+                  <CardContent className="pt-6">
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-2">
+                        <ArrowRight className="h-4 w-4 mt-1 mr-2 text-primary flex-shrink-0" />
+                        <span>All packages include one round of revisions. Additional revisions charged at $59/hour.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <ArrowRight className="h-4 w-4 mt-1 mr-2 text-primary flex-shrink-0" />
+                        <span>Hosting recommendations provided separately based on specific needs.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <ArrowRight className="h-4 w-4 mt-1 mr-2 text-primary flex-shrink-0" />
+                        <span>Content (text and images) to be provided by the client.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <ArrowRight className="h-4 w-4 mt-1 mr-2 text-primary flex-shrink-0" />
+                        <span>Project timelines begin once all required content has been received.</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+            
+            <div className="text-center mt-16">
               <p className="text-muted-foreground mb-4">
-                Need a custom solution? Contact me for a personalized quote.
+                *Prices valid as of {new Date().toLocaleDateString('en-US', {month: 'long', year: 'numeric'})}
               </p>
-              <Button asChild variant="outline" size="lg" className="rounded-full">
+              <Button asChild variant="default" size="lg" className="rounded-full">
                 <Link href="/contact">
-                  Get a Free Quote <ArrowRight className="ml-2 h-4 w-4" />
+                  Get Started Today <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>

@@ -91,7 +91,7 @@ export default function AboutPage() {
                         Bachelor of Science in Computer Science
                       </h3>
                       <p className="text-muted-foreground">
-                        University of Technology, 2018
+                        2018
                       </p>
                     </li>
                     <li>
@@ -99,7 +99,7 @@ export default function AboutPage() {
                         Web Development Certification
                       </h3>
                       <p className="text-muted-foreground">
-                        Online Academy, 2019
+                        2019
                       </p>
                     </li>
                   </ul>

@@ -158,7 +158,7 @@ export default function AboutPage() {
                   <div className="absolute w-5 h-5 bg-primary rounded-full -left-[10px] top-0 ring-4 ring-background"></div>
                   <h3 className="font-bold text-xl">Web Developer</h3>
                   <p className="text-primary font-medium">Freelancer</p>
-                  <p className="text-sm text-muted-foreground mb-4">2024 - Current</p>
+                  <p className="text-sm text-muted-foreground mb-4">2024 - Present</p>
                   <p className="text-muted-foreground">
                     Developed responsive websites and e-commerce platforms for
                     clients. Collaborated with designers and project managers to

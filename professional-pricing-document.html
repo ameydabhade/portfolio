@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website Development Services </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #2d2d2d;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 22px;
+            color: #2d2d2d;
+            margin-top: 30px;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 20px;
+            color: #2d2d2d;
+            margin-top: 25px;
+        }
+        h4 {
+            font-size: 18px;
+            color: #444;
+            margin-top: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .package {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #4a6fa5;
+        }
+        .package h4 {
+            margin-top: 0;
+            color: #4a6fa5;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2d2d2d;
+            margin: 10px 0;
+        }
+        .description {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .features {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .features li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4a6fa5;
+            font-weight: bold;
+        }
+        .timeframe {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .maintenance {
+            background-color: #f0f5fa;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #5b8ac0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f9f9f9;
+        }
+        .approach {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .approach-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .approach-title {
+            font-weight: bold;
+            color: #4a6fa5;
+            margin-bottom: 8px;
+        }
+        .next-steps {
+            margin: 20px 0;
+        }
+        .next-steps ol {
+            padding-left: 20px;
+        }
+        .terms {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .contact {
+            background-color: #f0f5fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0 20px;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+            border-top: 1px solid #eaeaea;
+            padding-top: 20px;
+        }
+        @media print {
+            body {
+                padding: 0;
+                margin: 0.5cm;
+                font-size: 12pt;
+                color: black;
+            }
+            .package, .maintenance, .approach-item, .terms, .contact {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+            h1, h2, h3, h4 {
+                page-break-after: avoid;
+            }
+            h2 {
+                margin-top: 20px;
+                padding-top: 15px;
+            }
+            table, figure, .approach {
+                page-break-inside: avoid;
+            }
+            .package {
+                border-left: 3px solid #4a6fa5 !important;
+                background-color: white !important;
+                border: 1px solid #ddd;
+                margin-bottom: 15px;
+            }
+            .maintenance {
+                border-left: 3px solid #5b8ac0 !important;
+                background-color: white !important;
+                border: 1px solid #ddd;
+            }
+            .approach-item, .terms {
+                background-color: white !important;
+                border: 1px solid #ddd;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            .features li:before {
+                color: black !important;
+            }
+            .header {
+                margin-bottom: 20px;
+                padding-bottom: 10px;
+            }
+            .logo {
+                font-size: 20pt;
+            }
+            .price {
+                color: black !important;
+            }
+            .approach-title {
+                color: black !important;
+                font-weight: bold;
+            }
+            .footer {
+                margin-top: 20px;
+            }
+            /* Add a clean page break before specific sections if needed */
+            .maintenance-section {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Amey Dabhade</div>
+        <p><br>+918600595546<br>ameydabhade4@gmail.com<br>https://ameydabhade.com</p>
+    </div>
+
+    <h1> Website Development Services</h1>
+    <p>Thank you for your interest in our custom website development services. We specialize in creating bespoke, high-performance websites for professionals and businesses across various industries. This document outlines our pricing structure and details what's included in each package.</p>
+
+    <h2>PACKAGE OPTIONS</h2>
+    
+    <div class="package">
+        <h4>ESSENTIAL PROFESSIONAL PRESENCE</h4>
+        <div class="price">$699</div>
+        <div class="description">A professional online presence for individuals or small businesses</div>
+        
+        <h4>INCLUDES:</h4>
+        <ul class="features">
+            <li>Custom-coded responsive website</li>
+            <li>3-5 pages (Home, About, Services, Contact, etc.)</li>
+            <li>Mobile-optimized design</li>
+            <li>Basic SEO setup</li>
+            <li>GDPR-compliant contact form</li>
+            <li>SSL security certificate</li>
+            <li>Social media integration</li>
+            <li>Basic branding alignment</li>
+        </ul>
+        
+        <div class="timeframe">TIMEFRAME: 1-3 weeks from content receipt</div>
+    </div>
+    
+    <div class="package">
+        <h4>ENHANCED PROFESSIONAL SOLUTION</h4>
+        <div class="price">$1,099</div>
+        <div class="description">A more comprehensive website for established businesses</div>
+        
+        <h4>INCLUDES ALL ESSENTIAL FEATURES PLUS:</h4>
+        <ul class="features">
+            <li>Up to 8 pages of content</li>
+            <li>Team/staff profiles</li>
+            <li>Service descriptions</li>
+            <li>Client testimonials section</li>
+            <li>Blog/news capability</li>
+            <li>Google Maps integration</li>
+            <li>Enhanced SEO features</li>
+            <li>Email newsletter signup</li>
+        </ul>
+        
+        <div class="timeframe">TIMEFRAME: 2-4 weeks from content receipt</div>
+    </div>
+    
+    <div class="package">
+        <h4>COMPLETE BUSINESS PLATFORM</h4>
+        <div class="price">$1,799</div>
+        <div class="description">A fully-featured website with additional functionality</div>
+        
+        <h4>INCLUDES ALL ENHANCED FEATURES PLUS:</h4>
+        <ul class="features">
+            <li>Custom design elements</li>
+            <li>Information resources and downloadable materials</li>
+            <li>Basic enquiry/booking request system</li>
+            <li>Document download area</li>
+            <li>FAQ section</li>
+            <li>Image gallery</li>
+            <li>Advanced contact forms</li>
+            <li>On-page SEO optimization for all pages</li>
+        </ul>
+        
+        <div class="timeframe">TIMEFRAME: 4-5 weeks from content receipt</div>
+    </div>
+
+    <h2 class="maintenance-section">MAINTENANCE SERVICES</h2>
+    
+    <div class="maintenance">
+        <h4>TECHNICAL MAINTENANCE PACKAGE</h4>
+        <div class="price">$149<span style="font-size: 16px; font-weight: normal;">/month</span></div>
+        <div class="description">Available only for websites with backend functionality</div>
+        
+        <h4>INCLUDES:</h4>
+        <ul class="features">
+            <li>Regular code updates</li>
+            <li>Security monitoring</li>
+            <li>Database management</li>
+            <li>Booking system maintenance</li>
+            <li>Form processing support</li>
+            <li>Technical troubleshooting</li>
+            <li>Monthly performance report</li>
+        </ul>
+    </div>
+
+    <h2>ADD-ON OPTIONS</h2>
+    <p>Enhance any package with these additional services:</p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Additional pages</td>
+                <td>$69 per page</td>
+            </tr>
+            <tr>
+                <td>Basic booking system</td>
+                <td>$249</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>OUR APPROACH</h2>
+    <h3>WHAT SETS OUR WEBSITES APART</h3>
+    
+    <div class="approach">
+        <div class="approach-item">
+            <div class="approach-title">Custom Development</div>
+            <p>Hand-coded websites for better performance and security</p>
+        </div>
+        <div class="approach-item">
+            <div class="approach-title">Accessibility Compliance</div>
+            <p>All sites meet WCAG standards for accessibility</p>
+        </div>
+        <div class="approach-item">
+            <div class="approach-title">GDPR Built-in</div>
+            <p>Data protection compliance included from the ground up</p>
+        </div>
+        <div class="approach-item">
+            <div class="approach-title">Mobile-optimized</div>
+            <p>Perfect functionality across all devices</p>
+        </div>
+        <div class="approach-item">
+            <div class="approach-title">Secure by Design</div>
+            <p>Enhanced security features for your information</p>
+        </div>
+    </div>
+
+    <h2>PAYMENT TERMS</h2>
+    <ul>
+        <li>50% deposit to commence work</li>
+        <li>50% upon completion before site launch</li>
+        <li>Maintenance packages billed monthly or quarterly</li>
+    </ul>
+
+    <h2>NEXT STEPS</h2>
+    <div class="next-steps">
+        <p>To proceed with a website project:</p>
+        <ol>
+            <li>Select your preferred package</li>
+            <li>Schedule an initial consultation</li>
+            <li>Receive a tailored proposal with timeline</li>
+            <li>Begin the development process</li>
+        </ol>
+    </div>
+
+    <h2>TERMS & CONDITIONS</h2>
+    <div class="terms">
+        <ul>
+            <li>All packages include one round of revisions. Additional revisions charged at $59/hour.</li>
+            <li>Hosting recommendations provided separately based on specific needs.</li>
+            <li>Content (text and images) to be provided by the client.</li>
+            <li>Project timelines begin once all required content has been received.</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>*Prices valid as of April 2025*</p>
+    </div>
+    
+    <!-- Add print button -->
+    <div style="text-align: center; margin: 30px 0; display: none; print-display: none;">
+        <button onclick="window.print()" style="padding: 10px 20px; background-color: #4a6fa5; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            Print this document
+        </button>
+    </div>
+    
+    <script>
+        // Add a class to help with print formatting
+        window.onload = function() {
+            // Hide print button when printing
+            window.onbeforeprint = function() {
+                document.querySelector('button').style.display = 'none';
+            };
+            
+            // Show print button after printing
+            window.onafterprint = function() {
+                document.querySelector('button').style.display = 'block';
+            };
+            
+            // Show the print button
+            document.querySelector('button').style.display = 'block';
+        };
+    </script>
+</body>
+</html> 

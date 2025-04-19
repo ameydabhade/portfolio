@@ -5,10 +5,19 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import { Rocket, Code } from "lucide-react";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export function HeroSection() {
-  const { theme } = useTheme();
-  const isDarkTheme = theme === "dark";
+  const { theme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  
+  // Only show themed content after mounting to avoid hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  
+  // Use resolvedTheme as it's more reliable
+  const isDarkTheme = mounted && (resolvedTheme === "dark");
   
   return (
     <section className="relative py-20 md:py-28 lg:py-36 overflow-hidden">
@@ -70,25 +79,42 @@ export function HeroSection() {
             <div className="relative w-full h-[500px] overflow-hidden">
               {/* Browser window mockup that inverts with theme */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className={`relative w-4/5 h-4/5 rounded-md shadow-lg border overflow-hidden ${isDarkTheme ? "bg-white border-gray-300" : "bg-black border-gray-500"}`}>
-                  <div className={`h-8 w-full flex items-center px-3 ${isDarkTheme ? "bg-gray-100" : "bg-gray-900"}`}>
-                    <div className="flex space-x-2">
-                      <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                      <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                      <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                {mounted ? (
+                  <div className={`relative w-4/5 h-4/5 rounded-md shadow-lg border overflow-hidden ${isDarkTheme ? "bg-white border-gray-300" : "bg-black border-gray-500"}`}>
+                    <div className={`h-8 w-full flex items-center px-3 ${isDarkTheme ? "bg-gray-100" : "bg-gray-900"}`}>
+                      <div className="flex space-x-2">
+                        <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <div className={`w-full h-6 rounded mb-3 ${isDarkTheme ? "bg-gray-200" : "bg-gray-800"}`}></div>
+                      <div className={`w-2/3 h-6 rounded mb-6 ${isDarkTheme ? "bg-gray-200" : "bg-gray-800"}`}></div>
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className={`h-20 rounded ${isDarkTheme ? "bg-gray-200" : "bg-gray-800"}`}></div>
+                        <div className={`h-20 rounded ${isDarkTheme ? "bg-gray-200" : "bg-gray-800"}`}></div>
+                        <div className={`h-20 rounded ${isDarkTheme ? "bg-gray-200" : "bg-gray-800"}`}></div>
+                        <div className={`h-20 rounded ${isDarkTheme ? "bg-gray-200" : "bg-gray-800"}`}></div>
+                      </div>
                     </div>
                   </div>
-                  <div className="p-4">
-                    <div className={`w-full h-6 rounded mb-3 ${isDarkTheme ? "bg-gray-200" : "bg-gray-800"}`}></div>
-                    <div className={`w-2/3 h-6 rounded mb-6 ${isDarkTheme ? "bg-gray-200" : "bg-gray-800"}`}></div>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className={`h-20 rounded ${isDarkTheme ? "bg-gray-200" : "bg-gray-800"}`}></div>
-                      <div className={`h-20 rounded ${isDarkTheme ? "bg-gray-200" : "bg-gray-800"}`}></div>
-                      <div className={`h-20 rounded ${isDarkTheme ? "bg-gray-200" : "bg-gray-800"}`}></div>
-                      <div className={`h-20 rounded ${isDarkTheme ? "bg-gray-200" : "bg-gray-800"}`}></div>
+                ) : (
+                  <div className="relative w-4/5 h-4/5 rounded-md shadow-lg border overflow-hidden bg-background">
+                    {/* Skeleton placeholder for SSR */}
+                    <div className="h-8 w-full"></div>
+                    <div className="p-4">
+                      <div className="w-full h-6 rounded mb-3 bg-muted"></div>
+                      <div className="w-2/3 h-6 rounded mb-6 bg-muted"></div>
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="h-20 rounded bg-muted"></div>
+                        <div className="h-20 rounded bg-muted"></div>
+                        <div className="h-20 rounded bg-muted"></div>
+                        <div className="h-20 rounded bg-muted"></div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           </motion.div>

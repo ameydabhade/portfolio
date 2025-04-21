@@ -59,6 +59,36 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
+    id: "4",
+    title: "Pavan Goyal And Associates",
+    description: "We help organisations build a business of their dreams with our services. We are a team of experienced professionals who are dedicated to providing the best possible services to our clients.",
+    coverImage: "/images/projects/portfolio.jpg",
+    demoLink: "https://goyalca.com",
+    githubLink: "https://github.com/ameydabhade/portfolio",
+    technologies: ["Next.js", "Shadcn UI", "Tailwind CSS", "Framer Motion", "TypeScript"],
+    category: "web",
+  },
+  {
+    id: "5",
+    title: "AssetScout",
+    description: "A website for a startup that provides a platform for asset management and tracking.",
+    coverImage: "/images/projects/security-lab.jpg",
+    demoLink: "https://assetscout.in",
+    githubLink: "https://github.com/ameydabhade",
+    technologies: ["Penetration Testing", "Security Protocols", "Vulnerability Assessment", "AWS Security"],
+    category: "security",
+  },
+  {
+    id: "6",
+    title: "Ledgerace",
+    description: "Effortless Bookkeeping: Your Path To Financial Clarity",
+    coverImage: "/images/projects/cloud-infra.jpg",
+    demoLink: "https://ledgerace.com",
+    githubLink: "https://github.com/ameydabhade/cloud-infrastructure",
+    technologies: ["AWS", "Azure", "Docker", "Linux", "Cloud Security"],
+    category: "cloud",
+  },
+  {
     id: "1",
     title: "VmLeads CRM",
     description: "A real-time customer relationship management tool designed to help organizations improve efficiency, streamline human resources, and perform detailed analytics. Built with Next.js and optimized for performance.",
@@ -88,36 +118,7 @@ export const projects: Project[] = [
     technologies: ["React.js", "Tailwind CSS", "SEO Optimization", "Performance Optimization"],
     category: "web",
   },
-  {
-    id: "4",
-    title: "Portfolio Website",
-    description: "A modern portfolio website built with Next.js and Shadcn UI components, featuring animations and a responsive design to showcase my projects and skills.",
-    coverImage: "/images/projects/portfolio.jpg",
-    demoLink: "https://ameydabhade.com",
-    githubLink: "https://github.com/ameydabhade/portfolio",
-    technologies: ["Next.js", "Shadcn UI", "Tailwind CSS", "Framer Motion", "TypeScript"],
-    category: "web",
-  },
-  {
-    id: "5",
-    title: "Cybersecurity Testing Lab",
-    description: "A personal project to practice ethical hacking skills and web security testing. Implements various security protocols and vulnerability assessments.",
-    coverImage: "/images/projects/security-lab.jpg",
-    demoLink: "https://security-lab-demo.dev",
-    githubLink: "https://github.com/ameydabhade/security-lab",
-    technologies: ["Penetration Testing", "Security Protocols", "Vulnerability Assessment", "AWS Security"],
-    category: "security",
-  },
-  {
-    id: "6",
-    title: "Cloud Infrastructure Project",
-    description: "Developed scalable cloud infrastructure solutions using AWS and Azure, implementing best practices for security, performance, and cost optimization.",
-    coverImage: "/images/projects/cloud-infra.jpg",
-    demoLink: "https://cloud-infra-demo.dev",
-    githubLink: "https://github.com/ameydabhade/cloud-infrastructure",
-    technologies: ["AWS", "Azure", "Docker", "Linux", "Cloud Security"],
-    category: "cloud",
-  },
+
 ];
 
 export const services: Service[] = [

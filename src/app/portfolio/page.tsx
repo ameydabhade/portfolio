@@ -72,11 +72,9 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
       <Card className="h-full overflow-hidden">
-        <div className="relative aspect-[16/9] overflow-hidden bg-muted">
-          <div className="absolute inset-0 flex items-center justify-center bg-muted text-muted-foreground">
-            Project Image Placeholder
-          </div>
-        </div>
+        {/* <div className="relative aspect-[16/9] overflow-hidden bg-muted">
+         
+        </div> */}
         <CardContent className="p-6">
           <div className="flex flex-wrap gap-2 mb-4">
             {project.technologies.slice(0, 3).map((tech) => (
